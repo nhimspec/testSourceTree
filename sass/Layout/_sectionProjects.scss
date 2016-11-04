@@ -1,0 +1,48 @@
+@import "../Helpers/variables";
+
+/** PROJECT **/
+#projects {
+    width: 100%;
+    background-color: #fbfbfb;
+    padding: 65px 0 0 0;
+    text-align: center;
+
+
+    .section-header {
+    	margin-bottom: 65px;
+
+	}/* /.section-header */
+
+	.container-fluid {
+	    max-width: 1920px;
+	}/* /.container-fluid */
+
+	.project {
+	    width: 100%;
+	    // height: 200px;
+	    display: block;
+	    position: relative;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+
+
+		.project-overlay {
+		    width: 100%;
+		    height: 100%;
+		    background-color: $White;
+		    opacity: 0;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    z-index: 1;
+		    -webkit-transition: all 0.3s;
+		    -moz-transition: all 0.3s;
+		    -o-transition: all 0.3s;
+		    transition: all 0.3s;
+		}/* /.project-overlay */
+
+	}/* /.project */
+
+}/* /#project */

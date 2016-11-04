@@ -1,0 +1,243 @@
+@import "../Helpers/variables";
+
+#header {
+	    width: 100%;
+	    background-image: url(../images/banner.jpg);
+		background-attachment: fixed;
+		background-position: center;
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+
+	    .top-header{
+	    	width:100%;
+	    	padding-top: 40px;
+	    	
+
+	    	.header-logo {
+			    display: block;
+			    font-size: 38px;
+			    color: $White;
+			    -webkit-transition: all 0.3s;
+			    -moz-transition: all 0.3s;
+			    -o-transition: all 0.3s;
+			    transition: all 0.3s;
+			    float: left;
+			    font-family: $font-Regular;
+			    
+
+			}/* /.header-logo */
+
+			.header-navigation {
+    			float: right;
+
+    			ul {
+				    width: 100%;
+				    margin: 35px 0 0 0;
+				    padding: 0;
+				    list-style-type: none;
+
+					li {
+					    margin-left: 40px;
+					    line-height: 1.375;
+					    font-weight: 700;
+					    font-size: 15px;
+					    color: $White;
+					    text-transform: uppercase;
+					    position: relative;
+					    float: left;
+
+						a{
+							    color: $White;
+							    -webkit-transition: all 0.3s;
+							    -moz-transition: all 0.3s;
+							    -o-transition: all 0.3s;
+							    transition: all 0.3s;
+
+							    &:hover{
+									color: $Yellow;
+								}
+
+
+						}/* /a */
+
+					}/* li */
+
+					& li:first-child {
+   		 				margin-left: 0;
+					}
+
+				}/* /ul */
+
+			}/* /.header-navigation */
+
+	    }/* /.top-header */
+		
+		.bottom-header {
+		    width: 100%;
+		    padding-top: 240px;
+		    padding-bottom: 280px;
+		    text-align: center;
+		   
+		   	span.span-dot {
+    			color: $Yellow;
+			}
+
+		    h2 {
+			    margin: 0 0 50px 0;
+			    line-height: 0.74;
+			    font-weight: 900;
+			    font-size: 81px;
+			    color: $White;
+			    text-transform: uppercase;
+			}/* /h2 */
+
+			p {
+			    line-height: 1.6;
+			    margin-bottom: 60px;
+			    font-size: 15px;
+			    color: $White;
+			    font-family: $font-ExtraLight;
+			}/* /p */
+
+			.header-button-one {
+			    width: auto;
+			    height: 63px;
+			    line-height: 57px;
+			    background: rgba(255, 255, 255, 0.2);
+			    margin: 0 15px;
+			    padding: 0 70px;
+			    display: inline-block;
+			    border: 3px solid $White;
+			    border-radius: 3px;
+			    font-weight: 700;
+			    font-size: 18px;
+			    color: $White;
+			    text-transform: uppercase;
+			    -webkit-transition: all 0.3s;
+			    -moz-transition: all 0.3s;
+			    -o-transition: all 0.3s;
+			    transition: all 0.3s;
+
+				&:hover{
+					background:transparent;
+					
+				}
+
+			}/* /header-button-one */
+
+			.header-button-two {
+			    width: auto;
+			    height: 63px;
+			    line-height: 63px;
+			    background: $Yellow;
+			    margin: 0 15px;
+			    padding: 0 70px;
+			    display: inline-block;
+			    border-radius: 3px;
+			    font-weight: 700;
+			    font-size: 18px;
+			    color: $White;
+			    text-transform: uppercase;
+			    -webkit-transition: all 0.3s;
+			    -moz-transition: all 0.3s;
+			    -o-transition: all 0.3s;
+			    transition: all 0.3s;
+				
+				&:hover{
+					
+					background: rgba(241, 210, 4, 0.5);
+				}
+
+			}/* /header-button-two */
+
+		}/* /.bottom-header */
+
+}/* /#header */
+
+
+.responsive-menu{
+	width:0;
+	max-height:0;
+	overflow:hidden;
+	opacity:0;
+	transition:all 2s;
+    background-color: $White;
+    margin-top: 20px;
+
+    ul{
+    	width: 100%;
+	    margin: 0;
+	    padding: 0;
+		text-align:center;
+
+	    li {
+		    width: 100%;
+		    
+
+			a{
+				    width: 100%;
+				    padding: 15px;
+				    display: block;
+				    border-bottom: 1px solid #e4e4e4;
+				    color: $Black;
+				    text-align: center;
+
+		    	span{
+		    		color:black;
+		    		font-family: $font-ExtraLight;
+		    		font-size:15px;
+
+		    	}
+		    }	
+		}
+    }
+}
+
+.active{
+	width:100%;
+	max-height:500px;
+	opacity:1;
+	transition: all 2s;
+
+}
+
+@media only screen and (min-width: 992px){
+	.responsive-menu{
+		display:none;
+	}
+}
+
+@media only screen and (max-width: 992px){
+	#header{
+		.bottom-header {
+			.header-button-one, 
+			.header-button-two {
+	    		margin-top: 10px;
+	    		margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+.open-responsive-menu{
+	display: none;
+}
+
+@media only screen and (max-width: 992px){
+	.open-responsive-menu {
+	    height: 100%;
+	    background: 0 0;
+	    padding: 26px 0;
+	    border: none;
+	    outline: 0;
+	    display: block;
+	    float: right;
+	}
+
+	#header .top-header .header-navigation {
+	    display: none;
+	}
+}
+

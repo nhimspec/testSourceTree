@@ -1,0 +1,109 @@
+@import "../Helpers/variables";
+
+/** CONTACT US **/
+#contact-us {
+    width: 100%;
+    background-color: #dda06f;
+    padding: 40px 0 50px 0;
+    text-align: center;
+
+	.section-header {
+	    width: 100%;
+	    margin-bottom: 80px;
+
+	    h3 {
+		    margin: 0 0 30px 0;
+		    line-height: 0.6;
+		    font-weight: 900;
+		    font-size: 30px;
+		    color: $Black;
+		    text-transform: uppercase;
+		    color: $White;
+
+	    	}/* /h3 */
+
+	    p {
+	    	margin-bottom: 0;
+   		 	line-height: 1.6;
+    		font-size: 15px;
+		    color: $White;
+		    font-family: $font-Regular;
+		}/* /p */
+
+	}/* /.section-header */
+
+	.section-content {
+	    width: 100%;
+
+		.contact-us-box {
+		    width: 100%;
+		    display: inline-block;
+		    text-align: left;
+
+			.box-left {
+			    width: auto;
+			    margin: 0;
+			    padding: 0 20px 0 0;
+			    border-right: 1px solid $White;
+			    line-height: normal;
+			    display: table-cell;
+			    font-weight: 700;
+			    font-size: 18px;
+			    color: $White;
+			    text-transform: uppercase;
+			}/* /.box-left */
+
+			.box-right {
+			    width: auto;
+			    margin: 0;
+			    padding: 0 0 0 20px;
+			    display: table-cell;
+			    font-family: "Source Sans Pro Regular", sans-serif;
+
+				span {
+				    width: 100%;
+				    display: block;
+				    line-height: 1.6;
+				    font-size: 15px;
+				    color: #fee3bf;
+
+				    a {
+					    color: #fee3bf;
+					    text-decoration: none;
+					}/* /a */
+				}/* /span */
+
+			}/* /.box-right */
+
+		}/* /.contact-us-box */
+
+		.contact-us-social {
+		    width: 100%;
+		    text-align: right;
+
+			a {
+			    margin-left: 15px;
+			    font-size: 17px;
+			    color: $White;
+			    -webkit-transition: all 0.3s;
+			    -moz-transition: all 0.3s;
+			    -o-transition: all 0.3s;
+			    transition: all 0.3s;
+
+			    &:hover{
+			    	color:black;
+			    }
+			}
+
+		}/* /contact-us-social */
+
+	}/* /.section-content */
+
+}/* /#contact-us */
+
+
+@media (min-width: 768px){
+	.contact-us-social{
+		text-align: left;
+	}
+}

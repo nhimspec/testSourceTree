@@ -1,0 +1,46 @@
+@import "Base/reset";
+
+@import "Helpers/variables";
+
+@import "Layout/header";
+@import "Layout/footer";
+@import "Layout/section";
+@import "Layout/sectionAbout";
+@import "Layout/sectionContactUs";
+@import "Layout/sectionCounter";
+@import "Layout/sectionLatestNews";
+@import "Layout/sectionProjects";
+@import "Layout/sectionServices";
+@import "Layout/sectionTeam";
+@import "Layout/sectionTestimonials";
+
+// @import "font-awesome/scss/font-awesome";
+
+@font-face {
+    font-family: Source Sans Pro Black;
+    src: url(../fonts/SourceSansPro-Black.otf);
+}
+
+@font-face{
+	font-family: Source Sans Pro Regular;
+    src: url(../fonts/SourceSansPro-Regular.otf);
+}
+
+@font-face{
+	font-family: Source Sans Pro ExtraLight;
+    src: url(../fonts/SourceSansPro-Light.otf);
+}
+
+body{
+	line-height: 1.5;
+    background-color: $White;
+    font-family: $font-Black;
+    font-weight: 400;
+    font-size: 15px;
+    color: #888;
+}
+
+
+a:hover {
+	text-decoration: none;
+}

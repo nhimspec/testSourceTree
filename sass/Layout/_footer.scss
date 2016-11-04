@@ -1,0 +1,110 @@
+#footer {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 40px 0;
+
+    .widget{
+    	
+		.widget-title {
+		    margin: 0 0 20px 0;
+		    padding: 0;
+		    width: 100%;
+			position: relative;
+			
+
+		    h3 {
+			    line-height: 1.15;
+			    color: #888;
+			    margin: 0;
+			    padding: 0;
+			    font-weight: 700;
+			    font-size: 20px;
+    			text-transform: uppercase;
+
+			}/* /h3 */
+
+		}/* .widget-title */
+
+    	ul {
+			margin: 0;
+		    padding: 0;
+		    list-style-type: none;
+		    
+    		li {
+		    	margin: 0 0 10px 0;
+		    	padding-top: 0;
+			    padding-right: 0;
+			    padding-bottom: 0;
+			    border-bottom: none;
+			    width: 100%;
+    		    position: relative;
+				padding-left:20px;
+			     a {
+				    line-height: 1.5;
+				    color: #888;
+				    font-family: "Source Sans Pro Regular", sans-serif;
+
+				    &:hover{
+					    color: $Yellow;
+
+					}
+				}/* /a */
+
+				&:before {
+				    content: "\f105";
+				    font-family: "FontAwesome";
+				    // color: #f1d204;
+				    position: absolute;
+				    left: 0;
+				}
+
+				
+
+			}/* /li */
+
+		}/* /ul */
+
+	}/* /.widget */
+
+	.footer-logo {
+	    width: 100%;
+	    margin-bottom: 20px;
+	    display: block;
+	    text-align: right;
+	    
+	    height: 100px;
+	   
+	    img {
+		    max-width: 100%;
+		    height: auto;
+
+		}/* /img */
+	
+	}/* /.footer-logo  */
+
+	.copyright {
+	    width: 100%;
+	    line-height: 0.933;
+	    color: #888;
+	    font-family: "Source Sans Pro Regular", sans-serif;
+	    margin: 0 0 10px;
+	    
+
+	    a {
+		    color: #888;
+		    text-decoration: none;
+
+		}/* /a */
+
+			
+		
+		
+
+
+	}/* /.copyright */
+	
+	span {
+			font-family: "Source Sans Pro Regular", sans-serif;
+		}
+}/* /#footer */
+

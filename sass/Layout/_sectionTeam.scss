@@ -1,0 +1,113 @@
+@import "../Helpers/variables";
+
+/** TEAM **/
+#team {
+    width: 100%;
+    background: $White;
+    padding: 80px 0 100px 0;
+    text-align: center;
+    
+    .section-header {
+	    width: 100%;
+	    margin-bottom: 85px;
+	}/* /.section-header */
+
+	.section-content {
+	    width: 100%;
+
+		.widget_person {
+		    margin-top: 0px;
+		}/* /.widget_person */
+
+		.person {
+		    width: 100%;
+		    
+			
+			.person-image {
+			    width: 125px;
+			    margin-right: 25px;
+			    float: left;
+			    
+			  
+			    
+			}/* /.person-image */
+
+			.person-content {
+			    text-align: left;
+
+				h4 {
+				    width: 100%;
+				    margin: 12px 0 5px 0;
+				    line-height: 1.25;
+				    font-size: 20px;
+				    color: #333;
+				    text-transform: uppercase;
+				    font-family: $font-Regular;
+				    
+
+				}/* /h4 */
+				
+				h5 {
+				    width: 100%;
+				    margin: 0 0 10px 0;
+				    font-weight: 700;
+				    font-size: 15px;
+				    text-transform: uppercase;
+				    
+				}/* /h5 */
+
+				p {
+				    width: 100%;
+				    margin: 0 0 10px 0;
+				    line-height: 1.5;
+				    font-weight: 300;
+				    font-size: 15px;
+				    font-style: italic;
+				    color: #888;
+				    font-family: "Source Sans Pro ExtraLight", sans-serif;
+				    
+				}/* /p */
+
+				.person-content-social {
+				    width: 100%;
+				    margin: 0;
+				    padding: 0;
+				    list-style-type: none;
+				    
+				    
+
+					li:first-child {
+					    margin-left: 0;
+					}/* /li:first-child */
+
+					li {
+					    margin-left: 10px;
+					    float: left;
+
+					    a {
+						    width: 22px;
+						    height: 22px;
+						    line-height: 22px;
+						    display: inline-block;
+						    border-radius: 50%;
+						    font-size: 12px;
+						    color: $White;
+						    text-align: center;
+						    -webkit-transition: all 0.3s;
+						    -moz-transition: all 0.3s;
+						    -o-transition: all 0.3s;
+						    transition: all 0.3s;
+						    
+						}
+
+					}/* /li */
+
+				}/* /.person-content-social */
+
+			}/* /.person-content */
+
+		}/* /.person */
+
+	}/* /.section-content */
+
+}/* /#team */
